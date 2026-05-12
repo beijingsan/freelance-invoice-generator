@@ -1,0 +1,58 @@
+name: Paid custom invoice setup
+description: Request a branded or business-specific invoice generator setup.
+title: "[Custom setup]: "
+labels: ["paid-service", "lead"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for your interest. Share the basics below and we can confirm scope, price, and timeline before any work begins.
+  - type: input
+    id: business
+    attributes:
+      label: Business or project name
+      placeholder: Northline Studio
+    validations:
+      required: true
+  - type: dropdown
+    id: package
+    attributes:
+      label: Package
+      options:
+        - Quick setup - $29
+        - Business invoice template - $99
+        - Client-ready mini tool - $199
+        - Not sure yet
+    validations:
+      required: true
+  - type: textarea
+    id: needs
+    attributes:
+      label: What do you need customized?
+      description: Mention fields, wording, tax notes, colors, logo needs, payment terms, or workflow details.
+      placeholder: I need custom payment terms, my brand colors, and a field for project milestone.
+    validations:
+      required: true
+  - type: input
+    id: deadline
+    attributes:
+      label: Deadline
+      placeholder: No rush / this week / specific date
+    validations:
+      required: false
+  - type: textarea
+    id: contact
+    attributes:
+      label: Preferred contact method
+      description: Do not post private payment details, passwords, tax IDs, or sensitive account information.
+      placeholder: Email, website contact form, or GitHub only.
+    validations:
+      required: true
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Confirmation
+      options:
+        - label: I understand this request does not start paid work until scope and payment are confirmed privately.
+          required: true
+

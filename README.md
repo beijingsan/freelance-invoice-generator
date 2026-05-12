@@ -2,6 +2,8 @@
 
 A free browser-based invoice generator for freelancers and solo service businesses.
 
+[Live tool](https://beijingsan.github.io/freelance-invoice-generator/)
+
 ## What it does
 
 - Creates a polished invoice preview in the browser
@@ -10,7 +12,23 @@ A free browser-based invoice generator for freelancers and solo service business
 - Saves draft data in local browser storage
 - Prints or saves the invoice as PDF through the browser print dialog
 - Downloads a standalone invoice HTML file
-- Includes a natural upgrade block for a paid template pack
+- Includes a paid customization request path through GitHub Issues
+
+## Paid customization
+
+Need this invoice generator customized for your business or client workflow?
+
+Open a request here:
+
+[Request custom invoice setup](https://github.com/beijingsan/freelance-invoice-generator/issues/new?template=custom-invoice.yml)
+
+Suggested service packages:
+
+- Quick setup: $29 for logo/color/text customization
+- Business invoice template: $99 for custom fields, payment wording, and branded layout
+- Client-ready mini tool: $199 for a tailored public invoice tool page
+
+Payment details and final scope are confirmed privately before work begins.
 
 ## How to run locally
 
@@ -36,22 +54,6 @@ http://localhost:5173/
 4. Open Pages.
 5. Choose deploy from the main branch.
 6. Use the root folder as the Pages source.
-
-## Monetization setup
-
-After publishing your paid template pack, replace the `href="#"` value for `paidProductLink` in `index.html` with your product link.
-
-Suggested copy:
-
-```text
-Replace with your $5 template link
-```
-
-Suggested first paid product:
-
-```text
-Freelance Client Onboarding Kit
-```
 
 ## Notes
 

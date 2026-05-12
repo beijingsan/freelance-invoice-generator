@@ -1,0 +1,27 @@
+name: Bug report
+description: Report a problem with the free invoice generator.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      placeholder: Describe the problem.
+    validations:
+      required: true
+  - type: input
+    id: browser
+    attributes:
+      label: Browser and device
+      placeholder: Chrome on Mac, Safari on iPhone, etc.
+    validations:
+      required: false
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: 1. Open the tool 2. Add a line item 3. ...
+    validations:
+      required: false
+
